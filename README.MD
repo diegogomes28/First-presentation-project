@@ -1,8 +1,8 @@
-```
 
-# Projeto de HTML/CSS feito para estudos no ALURA.
 
-## Ferramentas utilizadas:
+# Projeto de HTML/CSS feito para estudos no ALURA. #
+
+## Ferramentas utilizadas: ##
 
 * HTML
 
@@ -10,9 +10,9 @@
 
 * Flex-box
 
-## Feito por:
+## Feito por: ##
 
-### Diego Gomes
+### Diego Gomes ###
 
 
-```
+
