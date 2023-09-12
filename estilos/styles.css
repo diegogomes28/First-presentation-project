@@ -5,7 +5,7 @@
     --cor-primaria:#22D4FD;
     --cor-secundaria:white;
     --cor-terciaria:black;
-    --cor-hover:red;
+    --cor-hover:aqua;
 
     --fonte-primaria: 'Montserrat', sans-serif;
     --fonte-secundaria: 'Krona One', sans-serif;
@@ -38,7 +38,7 @@ gap: 80px;
 
 .cabecalho_menu_link{
 font-family: var(--fonte-primaria);
-font-size: 24px;
+font-size: 1.6rem;
 color:var(--cor-primaria);
 font-weight: 600;
 text-decoration: none;
@@ -63,30 +63,31 @@ body{
     display:flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .texto{
-    width: 615px;
+    width: 46%;
     display: flex;
     flex-direction: column;
     gap:40px
 }
 
 .titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     width: 593px;
     font-family: var(--fonte-secundaria);
 }
 
 .texto-conteudo{
-    font-size:24px;
+    font-size:1.6rem;
     font-family: var(--fonte-primaria);
 }
 
 
 .subtitulo{
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.6rem;
     font-weight: 400;
 }
 
@@ -99,11 +100,10 @@ body{
 }
 
 .botao{
-    /* background-color: #22D4FD; */
     display: flex;
     width: 380px;
     border-radius: 20px;
-    font-size: 24px;
+    font-size: 1.6rem;
     padding: 21.5px 0;
     text-decoration: none;
     color: var(--cor-secundaria);
@@ -118,25 +118,22 @@ body{
 .botao:hover{
     background-color: var(--cor-hover);
     transition: 1s;
-    font-size: 200%;
+    font-size: 2rem;
 }
 
 .rodape{
     
+    padding: 24px;
+    color: var(--cor-terciaria);
+    background-color: var(--cor-primaria);
     text-align: center;
-    background-color:var(--cor-primaria);
-    padding: 30px;
-    font-size: 24px;
-    font-family: var(--fonte-primaria);
-    font-weight: 400;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    font-family: var(--fonte-terciaria);
+    font-size: 1.5rem;
+
 }
 
 .titulosobremim{
-    font-size: 36px;
+    font-size: 2rem;
     font-family: var(--fonte-secundaria);
     width: 10;
 }
@@ -144,11 +141,11 @@ body{
 
 .textolorem{
     font-family: var(--fonte-primaria);
-    font-size: 24px;
+    font-size: 1.6rem;
 }
 
 .listaexp{
-    font-size: 20px;
+    font-size: 1.4rem;
     font-family:var(--fonte-terciaria);
     font-weight: 500;
 }
@@ -159,8 +156,32 @@ body{
 }
 
 .cabecalho_menu_link:hover{
-    font-size: 30px;
+    font-size: 1.8rem;
     transition: 1s;
     color: var(--cor-primaria);
 
+}
+
+.apresentacao__imagem{
+    width: 46%;
+}
+
+
+@media (max-width: 1200px) {
+    .cabecalho{
+        padding: 2%;
+       
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .texto{
+        width: auto;
+    }
 }
